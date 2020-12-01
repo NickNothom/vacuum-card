@@ -17,7 +17,7 @@ export default css`
   }
 
   .preview {
-    background: var(--primary-color);
+    background: var(--paper-card-background-color);
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -137,12 +137,11 @@ export default css`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: var(--text-primary-color);
+    color: var(--text-color);
   }
 
   .battery {
     text-align: right;
-    font-weight: bold;
     padding: 8px;
   }
 
@@ -157,7 +156,7 @@ export default css`
   }
 
   .status-text {
-    color: var(--text-primary-color);
+    color: var(--text-color);
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -177,7 +176,7 @@ export default css`
   .vacuum-name {
     text-align: center;
     font-weight: bold;
-    color: var(--text-primary-color);
+    color: var(--text-color);
     font-size: 16px;
   }
 
@@ -196,7 +195,7 @@ export default css`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    color: var(--text-primary-color);
+    color: var(--text-color);
   }
 
   .stats-block {
@@ -212,15 +211,14 @@ export default css`
 
   .stats-value {
     font-size: 20px;
-    font-weight: bold;
   }
 
   ha-icon {
-    color: #fff;
+    color: var(--paper-dialog-button-color);
   }
 
   .toolbar {
-    background: var(--lovelace-background, var(--primary-background-color));
+    background: var(--primary-background-color);
     min-height: 30px;
     display: flex;
     flex-direction: row;
@@ -228,7 +226,7 @@ export default css`
   }
 
   .toolbar ha-icon-button {
-    color: var(--primary-color);
+    color: var(--paper-dialog-button-color);
     flex-direction: column;
     width: 44px;
     height: 44px;
@@ -245,7 +243,7 @@ export default css`
   }
 
   .toolbar paper-button {
-    color: var(--primary-color);
+    color: var(--paper-dialog-button-color);
     flex-direction: column;
     margin-right: 10px;
     padding: 15px 10px;
@@ -264,7 +262,7 @@ export default css`
   }
 
   .toolbar ha-icon {
-    color: var(--primary-color);
+    color: var(--paper-dialog-button-color);
     padding-right: 15px;
   }
 `;
